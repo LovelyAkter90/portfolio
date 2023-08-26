@@ -1,0 +1,185 @@
+.partner-part {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .text {
+    h2 {
+      font-weight: 700;
+      font-size: 48px;
+      color: $natto-heading2-color;
+      padding-bottom: 40px;
+      @include media-breakpoint-down(lg) {
+        font-size: 44px;
+        padding-bottom: 20px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 38px;
+        padding-bottom: 20px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 25px;
+      }
+    }
+  }
+  .partner-main {
+    padding-top: 20px;
+    .partner-item {
+      border: 1px solid #d8d2ec;
+      padding: 25px 10px;
+      @include media-breakpoint-down(lg) {
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+      @include media-breakpoint-down(md) {
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+      @include media-breakpoint-down(sm) {
+        padding: 10px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .partner-bottom {
+    margin-top: 60px;
+    background-color: $main-color;
+    padding: 50px 40px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    @include media-breakpoint-down(md) {
+      padding: 30px 20px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 30px 20px;
+    }
+    .bottom-part {
+      h2 {
+        font-weight: 700;
+        font-size: 48px;
+        color: $button-color;
+        padding-bottom: 20px;
+        line-height: 50px;
+        @include media-breakpoint-down(xl) {
+          font-size: 44px;
+          line-height: 45px;
+        }
+        @include media-breakpoint-down(lg) {
+          font-size: 44px;
+          line-height: 45px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 38px;
+          line-height: 45px;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 30px;
+          line-height: 35px;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        color: $button-color;
+        padding-bottom: 40px;
+        line-height: 30px;
+        padding-right: 80px;
+        @include media-breakpoint-down(xl) {
+          font-size: 18px;
+          padding-right: 0;
+        }
+        @include media-breakpoint-down(lg) {
+          font-size: 18px;
+          padding-right: 0;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 16px;
+          padding-right: 0;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 14px;
+          padding-right: 0;
+        }
+      }
+      .email {
+        width: 400px;
+        padding: 8px 10px;
+        background-color: $button-color;
+        margin-left: 180px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        @include media-breakpoint-down(xxl) {
+          padding: 6px;
+          width: 100%;
+          margin-left: 50px;
+        }
+        @include media-breakpoint-down(xl) {
+          padding: 6px;
+          width: 100%;
+          margin-left: 50px;
+        }
+        @include media-breakpoint-down(lg) {
+          padding: 6px;
+          width: 100%;
+          margin-left: 0;
+        }
+        @include media-breakpoint-down(md) {
+          padding: 6px;
+          width: 100%;
+          margin-left: 0;
+        }
+        @include media-breakpoint-down(sm) {
+          padding: 6px;
+          width: 100%;
+          margin-left: 0;
+        }
+        input {
+          width: 75%;
+          border: none;
+          outline: none;
+        }
+        button {
+          padding: 12px 18px;
+          margin-left: 30px;
+          background-color: $main-color;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border: none;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          @include media-breakpoint-down(lg) {
+            padding: 12px;
+            margin-left: 90px;
+          }
+          @include media-breakpoint-down(md) {
+            padding: 12px;
+            margin-left: 70px;
+          }
+          @include media-breakpoint-down(sm) {
+            padding: 10px;
+          }
+          svg {
+            fill: $button-color;
+          }
+        }
+      }
+    }
+  }
+}

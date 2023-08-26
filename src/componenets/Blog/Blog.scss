@@ -1,0 +1,138 @@
+.blog-part {
+  padding-top: 80px;
+  padding-bottom: 120px;
+  @include media-breakpoint-down(xl) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .blog-main {
+    padding-bottom: 40px;
+    h2 {
+      font-weight: 700;
+      font-size: 48px;
+      color: $natto-heading2-color;
+      padding-bottom: 15px;
+      @include media-breakpoint-down(lg) {
+        font-size: 44px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 38px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 25px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      color: $natto-link-color;
+      line-height: 30px;
+      padding: 0 60px;
+      @include media-breakpoint-down(lg) {
+        font-size: 18px;
+        padding: 0 60px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+        padding: 0px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+        padding: 0px;
+      }
+    }
+  }
+  .blog-item {
+    .img {
+      margin-left: 10px;
+      width: 300px;
+      height: 400px;
+    }
+    .content {
+      padding: 15px;
+      border: 1px solid #c4c4c4;
+      width: 400px;
+      min-height: 200px;
+      border-radius: 8px;
+      @include media-breakpoint-down(xxl) {
+        width: 350px;
+        margin: 0;
+      }
+      @include media-breakpoint-down(xl) {
+        width: 300px;
+        margin: 0;
+      }
+      @include media-breakpoint-down(lg) {
+        width: 300px;
+        margin: 0 20px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 250px;
+        margin: 0 -3px;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 300px;
+        margin: 0 8px;
+      }
+      img {
+        width: 100%;
+        display: inline-block;
+      }
+      .text {
+        padding-top: 20px;
+        padding-bottom: 8px;
+        span {
+          font-size: 16px;
+          font-weight: 400;
+          color: $natto-paragrapgh-color;
+          svg {
+            fill: $natto-paragrapgh-color;
+            margin-right: 10px;
+          }
+        }
+        h4 {
+          padding-top: 10px;
+          font-size: 20px;
+          font-weight: 700;
+          color: $natto-footer-header-color;
+          padding-right: 90px;
+          line-height: 26px;
+          @include media-breakpoint-down(xl) {
+            padding-right: 0px;
+          }
+          @include media-breakpoint-down(lg) {
+            padding-right: 0px;
+          }
+          @include media-breakpoint-down(md) {
+            padding-right: 0px;
+          }
+          @include media-breakpoint-down(sm) {
+            font-size: 16px;
+          }
+        }
+        a {
+          font-size: 16px;
+          @include media-breakpoint-down(sm) {
+            font-size: 14px;
+          }
+          font-weight: 700;
+          color: $natto-paragrapgh-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

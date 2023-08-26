@@ -1,0 +1,328 @@
+.About-part {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  @include media-breakpoint-down(xl) {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+
+  .about-left {
+    h2 {
+      font-weight: 700;
+      font-size: 48px;
+      color: $black-color;
+      padding-right: 100px;
+      line-height: 50px;
+      @include media-breakpoint-down(xl) {
+        font-size: 48px;
+        padding-right: 50px;
+      }
+      @include media-breakpoint-down(lg) {
+        font-size: 44px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 38px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 25px;
+        line-height: 35px;
+        padding-right: 0px;
+      }
+      span {
+        color: $main-color;
+      }
+    }
+  }
+  .about-right {
+    p {
+      font-weight: 400;
+      font-size: 18px;
+      color: $natto-link-color;
+      padding-left: 150px;
+      line-height: 25px;
+      @include media-breakpoint-down(xl) {
+        font-size: 18px;
+        padding-left: 0px;
+      }
+      @include media-breakpoint-down(lg) {
+        font-size: 16px;
+        padding-left: 20px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+        padding-left: 30px;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+        padding-left: 0px;
+      }
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        top: 56%;
+        left: 126px;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 73px;
+        background-color: $main-color;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        @include media-breakpoint-down(xl) {
+          left: -20px;
+        }
+        @include media-breakpoint-down(lg) {
+          left: 12px;
+        }
+        @include media-breakpoint-down(md) {
+          left: 12px;
+        }
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+      }
+    }
+    .about-btn {
+      margin-left: 140px;
+      margin-top: 50px;
+      @include media-breakpoint-down(xl) {
+        margin-left: -10px;
+      }
+      @include media-breakpoint-down(lg) {
+        margin-left: 10px;
+      }
+      @include media-breakpoint-down(md) {
+        margin-left: 0px;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-left: 0;
+        margin-top: 30px;
+      }
+
+      button {
+        padding: 15px 25px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: $main-color;
+        border: none;
+        color: $button-color;
+        @include media-breakpoint-down(xl) {
+          padding: 15px 20px;
+          font-size: 18px;
+        }
+        @include media-breakpoint-down(lg) {
+          padding: 12px 20px;
+          font-size: 18px;
+        }
+        @include media-breakpoint-down(md) {
+          padding: 12px 20px;
+          font-size: 18px;
+        }
+        @include media-breakpoint-down(sm) {
+          padding: 10px 15px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .about-bottom {
+    padding-top: 50px;
+    .item-part-about {
+      min-height: 190px;
+      padding: 30px 15px;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      margin-bottom: 25px;
+      box-sizing: border-box;
+      transition: all linear 0.3s;
+      -webkit-transition: all linear 0.3s;
+      -moz-transition: all linear 0.3s;
+      -ms-transition: all linear 0.3s;
+      -o-transition: all linear 0.3s;
+      background-color: $main-color;
+      h5 {
+        font-weight: 700;
+        font-size: 20px;
+        color: $button-color;
+        line-height: 20px;
+        @include media-breakpoint-down(xl) {
+          font-size: 20px;
+        }
+        @include media-breakpoint-down(lg) {
+          font-size: 18px;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 16px;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        @include media-breakpoint-down(lg) {
+          font-size: 16px;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 14px;
+        }
+        color: $button-color;
+        line-height: 24px;
+      }
+      &:hover {
+        background-color: $main-color;
+        color: $button-color;
+        h5 {
+          color: $button-color;
+        }
+        p {
+          color: $button-color;
+        }
+      }
+    }
+    .about-data {
+      min-height: 190px;
+      padding: 30px 15px;
+      border: 1px solid #c4c4c4;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      margin-bottom: 25px;
+      box-sizing: border-box;
+      transition: all linear 0.3s;
+      -webkit-transition: all linear 0.3s;
+      -moz-transition: all linear 0.3s;
+      -ms-transition: all linear 0.3s;
+      -o-transition: all linear 0.3s;
+
+      box-shadow: -2px 2px 20px -2px rgba(0, 0, 0, 0.33);
+      h5 {
+        font-weight: 700;
+        font-size: 20px;
+        color: $black-color;
+        line-height: 20px;
+        @include media-breakpoint-down(xl) {
+          font-size: 20px;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 16px;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        @include media-breakpoint-down(xl) {
+          font-size: 16px;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 14px;
+        }
+        color: #939393;
+        line-height: 24px;
+      }
+
+      &:hover {
+        background-color: $main-color;
+        color: $button-color;
+        h5 {
+          color: $button-color;
+        }
+        p {
+          color: $button-color;
+        }
+      }
+    }
+    .award-part {
+      padding: 50px 150px;
+      @include media-breakpoint-down(xxl) {
+        margin-top: 40px;
+        padding: 0 80px;
+      }
+      @include media-breakpoint-down(xl) {
+        margin-top: 30px;
+        padding: 40px;
+      }
+      @include media-breakpoint-down(lg) {
+        padding: 40px;
+      }
+      @include media-breakpoint-down(md) {
+        margin-top: 30px;
+        padding: 0;
+      }
+      @include media-breakpoint-down(sm) {
+        padding: 0;
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: 32px;
+        color: $black-color;
+        line-height: 35px;
+        padding-bottom: 20px;
+        @include media-breakpoint-down(lg) {
+          font-size: 30px;
+        }
+        @include media-breakpoint-down(md) {
+          padding-bottom: 10px;
+          font-size: 28px;
+        }
+        @include media-breakpoint-down(sm) {
+          padding-bottom: 10px;
+          font-size: 25px;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        color: $natto-link-color;
+        line-height: 30px;
+        padding-bottom: 20px;
+        @include media-breakpoint-down(lg) {
+          font-size: 16px;
+          padding-right: 80px;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 14px;
+        }
+      }
+      button {
+        padding: 15px 30px;
+        @include media-breakpoint-down(sm) {
+          padding: 10px 20px;
+        }
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border: none;
+        color: $main-color;
+        background-color: transparent;
+        border: 1px solid $main-color;
+      }
+    }
+  }
+}
