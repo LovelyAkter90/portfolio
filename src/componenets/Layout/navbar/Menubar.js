@@ -45,6 +45,7 @@ function Menubar() {
                 <Link
                   className={DmSans.className + " " + "mx-4"}
                   href={menu.url}
+                  key={i}
                 >
                   {menu.titel}
                 </Link>

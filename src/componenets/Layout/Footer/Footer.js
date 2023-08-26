@@ -39,13 +39,17 @@ function Footer() {
             <div className="col-6 col-lg-3 footer-left-2">
               <h4 className={DmSans.className + " "}>Services</h4>
               {ServiceData.map((data, i) => (
-                <Link href={data.url}>{data.titel}</Link>
+                <Link href={data.url} key={i}>
+                  {data.titel}
+                </Link>
               ))}
             </div>
             <div className="col-6 col-lg-3 footer-right-1">
               <h4 className={DmSans.className + " "}>Resources</h4>
               {ResourcesData.map((data, i) => (
-                <Link href={data.url}>{data.titel}</Link>
+                <Link href={data.url} key={i}>
+                  {data.titel}
+                </Link>
               ))}
             </div>
             <div className="col-6 col-lg-3 footer-right-2">

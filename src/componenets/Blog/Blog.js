@@ -103,7 +103,7 @@ export default function Blog() {
                 {Blogitemdata.map((item, i) => (
                   <div className="img" key={i}>
                     <div className="content">
-                      <Image src={item.image} />
+                      <Image src={item.image} alt={item.image} />
                       <div className="text">
                         <span className={DmSans.className}>
                           <BsCalendar2Week /> {item.span}

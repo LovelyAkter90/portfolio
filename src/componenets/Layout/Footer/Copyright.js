@@ -20,7 +20,11 @@ export default function Copyright() {
                 <ul className="d-flex jutify-content-center">
                   <li>
                     {Copyrightdata?.map((data, i) => (
-                      <Link href={data.url} className={openSans.className + ""}>
+                      <Link
+                        href={data.url}
+                        className={openSans.className + ""}
+                        key={i}
+                      >
                         {data.title}
                       </Link>
                     ))}
