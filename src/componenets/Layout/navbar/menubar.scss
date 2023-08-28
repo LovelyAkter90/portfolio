@@ -39,19 +39,10 @@ nav {
 }
 
 @keyframes stickynavs {
-  0% {
+  from {
     top: -80%;
   }
-  50% {
-    top: -40%;
-  }
-  100% {
-    top: 0%;
-  }
-  50% {
-    top: -40%;
-  }
-  0% {
-    top: -80%;
+  to {
+    top: 0;
   }
 }

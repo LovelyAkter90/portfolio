@@ -147,7 +147,7 @@
         @include media-breakpoint-down(sm) {
           padding: 6px;
           width: 100%;
-          margin-left: 0;
+          margin-left: 0px;
         }
         input {
           width: 75%;
@@ -173,7 +173,7 @@
             margin-left: 70px;
           }
           @include media-breakpoint-down(sm) {
-            padding: 10px;
+            margin-left: 20px;
           }
           svg {
             fill: $button-color;

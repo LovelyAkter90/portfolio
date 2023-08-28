@@ -107,15 +107,14 @@
     }
     .social-icons {
       .footer-icons {
-        width: 40px;
-        height: 40px;
+        padding: 8px;
         border-radius: 50%;
         background-color: $button-color;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
-        margin-right: 25px;
+        margin-right: 5px;
         cursor: pointer;
         svg {
           filter: grayscale(1);

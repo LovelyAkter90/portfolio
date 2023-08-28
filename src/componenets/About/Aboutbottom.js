@@ -27,7 +27,7 @@ export default function Aboutbottom() {
             <div className="col-lg-6">
               <div className="row">
                 {Aboutdata.map((item, i) => (
-                  <div className="col-6 col-lg-6" key={i}>
+                  <div className="col-12 col-lg-6" key={i}>
                     {activeClass == i ? (
                       <motion.div
                         className="item-part-about"

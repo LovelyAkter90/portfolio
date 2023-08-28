@@ -13,9 +13,6 @@
   .service-left {
     position: relative;
     .service-img {
-      @include media-breakpoint-down(lg) {
-        margin: 0 80px;
-      }
       img {
         width: 450px;
         height: 520px;
@@ -26,6 +23,9 @@
           height: 450px;
           text-align: center !important;
           margin: 0 15px !important;
+        }
+        @include media-breakpoint-down(lg) {
+          margin: 0 80px;
         }
         @include media-breakpoint-down(md) {
           width: 380px;

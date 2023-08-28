@@ -306,6 +306,7 @@
         }
         @include media-breakpoint-down(sm) {
           font-size: 14px;
+          padding-right: 0;
         }
       }
       button {
