@@ -15,7 +15,7 @@ export default function Copyright() {
       <div className="copyright-part">
         <Container>
           <div className="row">
-            <div className="col-8 col-lg-5 mx-auto">
+            <div className="col-12 col-lg-6 mx-auto">
               <div className="copyright-list">
                 <ul className="d-flex jutify-content-center">
                   <li>
