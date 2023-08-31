@@ -9,6 +9,7 @@ import Logo from "@/svg/Logo";
 import Menudata from "@/Data/Menudata";
 import { DM_Sans } from "next/font/google";
 import { motion } from "framer-motion";
+import Mobilepart from "./Mobilepart";
 
 const DmSans = DM_Sans({
   subsets: ["latin"],
@@ -33,7 +34,14 @@ function Menubar() {
 
   return (
     <div>
-      <Navbar expand="lg" className={showNav ? "navbar stickynav" : "navbar"}>
+      <Navbar
+        expand="lg"
+        className={
+          showNav
+            ? "navbar stickynav d-none d-lg-block"
+            : "navbar d-none d-lg-block"
+        }
+      >
         <Container>
           <Link href="#">
             <Logo />
@@ -64,6 +72,9 @@ function Menubar() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <div class="mobile-part">
+        <Mobilepart />
+      </div>
     </div>
   );
 }

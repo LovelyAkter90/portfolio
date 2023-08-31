@@ -38,12 +38,79 @@ nav {
     z-index: 99999;
   }
 }
-
-@keyframes stickynavs {
-  from {
-    top: -80%;
+.mobile-part {
+  .mobile-icon {
+    svg {
+      fill: $main-color;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
   }
-  to {
+  .sidebar {
+    position: fixed;
     top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: rgba(32, 42, 61, 0.97);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .sidebar-cross {
+      position: fixed;
+      top: 20px;
+      right: 10px;
+      cursor: pointer;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        color: $button-color;
+        color: $button-color;
+      }
+    }
+    ul {
+      padding-left: 0 !important;
+      li {
+        margin: 30px 0;
+        a {
+          color: $button-color;
+          text-align: center;
+          transition: all linear 0.3s;
+          margin: 0 auto !important;
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+    }
+    .sidebar-btn {
+      button {
+        background-color: $button-color;
+        color: rgba(32, 42, 61, 0.97);
+        padding: 12px 14px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  @keyframes stickynavs {
+    from {
+      top: -10%;
+    }
+    to {
+      top: 0;
+    }
   }
 }
